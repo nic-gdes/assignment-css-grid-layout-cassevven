@@ -1,0 +1,49 @@
+
+
+.item1 { grid-area: logo; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: aside; }
+.item5 { grid-area: sponsors; }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo menu menu menu menu menu'
+    'main main main  aside aside aside'
+    'main main main aside aside aside'
+    'sponsors sponsors sponsors sponsors sponsors sponsors'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #33638a;
+  padding: 10px;
+  height: 100vh;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(240, 227, 227, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.itemspecial {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    padding: 25px;
+}
+
+a {
+    color:#be207c
+}
+
+
